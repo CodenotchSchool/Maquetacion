@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #28253f;
+}
+
+header{
+    color: #fff;
+    display: flex;
+    padding: 30px;
+}
+
+header h1{
+    font-size:4em;
+    width: 33%;
+    text-align: center;
+}
+
+header ul{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header div{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+header div a{
+    text-decoration: none;
+    border: solid #fff 2px;
+    background: #28253f;
+    color: #fff;
+    padding: 5px;
+    font-size:large ;
+    border-radius: 5px;
+}
+
+.container{
+    margin-top:50px;
+    display: flex;
+    color: #fff;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    padding: 100px;
+}
+
+.container section h1{
+    width: 60%;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.container section p{
+    width: 100%;
+    padding: 10px;
+}
+
+.container aside{
+    width: 480px;
+    display: flex;
+}
+
+.container aside img{
+    width: 100%;
+}
+
+.services{
+    margin-top: 150px;
+}
+
+.services h1{
+    width: 100%;
+    text-align: center;
+}
+
+.services p{
+    width: 100%;
+    padding: 50px 150px 50px;
+    text-align: center;
+
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+}
+
+.card div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.card div img{
+    width: 150px;
+    height: 150px;
+}
+
+.card h2{
+    width: 100%;
+    text-align: center;
+}
+
+.card p{
+    width: 100%;
+    padding: 20px;
+}
+
+.about-us iframe{
+    margin-top: 50px;
+}
+
+.team{
+    margin-top: -100px;
+    padding-top: 100px;
+    background: #222327;
+}
+
+.team h1{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.team h4{
+    width: 100%;
+    padding: 0 100px 50px;
+    text-align: center;
+}
+
+.team-card div img{
+    border-radius: 50%;
+}
+
+.team-card p{
+    text-align: center;
+}
+
+.contact{
+    min-height: 100vh;
+}
+
+.contact h2{
+    width: 100%;
+    text-align: center;
+}
+
+.contact h3{
+    width: 100%;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text, .text-area, .btn{
+    display: flex;
+    width: 100%;
+    padding: 10px 150px 0px;
+    justify-content: center;
+}
+
+.text input[type="text"]{
+    width: 600px;
+    height: 30px;
+    background: #222327;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea{
+    resize: none;
+    width: 600px;
+    min-height: 200px;
+    background: #222327;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+
+.btn input[type="submit"]{
+    width: 100px;
+    margin-top: 50px;
+    border: solid #fff 2px;
+    background: #28253f;
+    color: #fff;
+    padding: 5px;
+    font-size:large ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    background: #222327;
+}
+
+footer ul{
+    display: flex;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a {
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+footer ul li a i{
+    font-size: 40px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}

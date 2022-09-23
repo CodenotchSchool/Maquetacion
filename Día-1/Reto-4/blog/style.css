@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: #FFFF00;
+    width: 100vw;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #222327;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section{
+    display: flex;
+    min-height: 80vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+section h1{
+    width: 60%;
+    text-align: center;
+}
+
+section div{
+    width: 50%;
+}
+section div img{
+    width: 500px;
+}
+
+section p {
+    width: 40%;
+    text-align: center;
+}

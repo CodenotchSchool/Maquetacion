@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejemplos</title>
+</head>
+<body>
+    <form action="" class="form">
+        
+        <h1  class="tittle">Formulario simple</h1>
+        <div class="inputs">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password"  id="password" placeholder="Contraseña"> 
+            <input type="password"  id="password2" placeholder="Repita la contraseña"> 
+        </div>
+        <button class="btn" onclick="addPersonas()" type="reset">Crear</button>
+        <button class="btn" onclick="mostrarPersonas()" type="reset">Mostrar</button>
+    
+    </form>
+
+    <aside class="aside-ocultar aside-mostrar">
+        <table class= "table" id="personas">
+                <!-- <tr class="head">
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Contraseña</th>
+                </tr> -->
+        </table>
+    </aside>
+
+    <script src="main.js"></script>
+</body>
+</html>
