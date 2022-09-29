@@ -1,0 +1,527 @@
+:root{
+    --marine:#57BC90;
+    --featcher:#77C9D4;
+    --forest:#015249;
+    --sleek-grey:#A5A5AF;
+    --white:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: var(--forest);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background: var(--marine);
+    z-index: 1;
+}
+
+header h1{
+    width: 50%;
+    padding: 8px;
+    padding-left: 40px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    width: 50%;
+    padding: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a{
+    color: var(--white);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+header ul li a:hover,header ul li a:focus {
+    background-size: 100% 2px;
+    color: var(--forest);
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    min-height: 100vh;
+    box-shadow: 40px 40px 40px 40px rgba(0,0,0,0.3);
+}
+
+.container{
+    min-height: 100vh;
+}
+.home{
+    display: flex;
+    padding-top: 50px;
+    display: flex;
+}
+/*---------------HOME SECTION ------------------------------------*/
+.home section{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image:     
+    linear-gradient(rgba(107, 126, 239, 0.5),rgba(10, 232, 136, 0.5)), 
+    url(./images/laptop.jpg);
+}
+
+.home section div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    color: var(--white);
+}
+
+.home section div h2, .home section div h5, .home section div p{
+    width: 55%;
+    padding-top: 10px;
+}
+
+/*---------------HOME SECTION END --------------------------------*/
+/*---------------HOME ASIDE --------------------------------------*/
+.home aside{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home aside div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home aside div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.home aside div b, .home aside div p{
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+}
+.home aside div ul{
+    display: flex;
+}
+
+.home aside div ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.home aside div ul li a{
+    text-decoration: none;
+    color: var(--marine);
+}
+/*---------------HOME ASIDE END -----------------------------------*/
+
+/*---------------ABOUT ME --------------------------------------*/
+
+.about-me{
+    background: var(--featcher);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-me section{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+
+}
+
+.about-me section h2{
+    width: 100%;
+    color: var(--forest);
+}
+.about-me section p{
+    width: 100%;
+    color: var(--forest);
+}
+
+.about-me aside{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me aside h2, .about-me aside ul{
+    color: var(--forest);
+}
+
+.about-me aside ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.about-me aside ul li p{
+    padding: 10px;
+}
+/*---------------ABOUT ME END ----------------------------------*/
+/*---------------TECH ------------------------------------------*/
+.tech{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech h1{
+    width: 100%;
+    color: var(--white);
+}
+
+.tech h1{
+    text-align: center;
+}
+
+.tech ul{
+    width: 80%;
+    color: var(--white);
+    margin-top: -100px;
+}
+
+.tech ul li{
+    list-style: none;
+    margin-top: 20px;
+    width: 100px;
+    position: relative;
+}
+
+.tech ul li::after{
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 250px;
+    width:700px;
+    border-bottom: solid var(--white) 5px;
+    z-index: -1;
+}
+
+.tech ul li:before{
+    position: absolute;
+    content: '';
+    top: 10px;
+    left: 250px;
+    width: 0px;
+    border-bottom: solid var(--marine) 5px;
+}
+
+/* Animación htmlCss */
+.tech ul li:nth-child(1):before{
+    animation: htmlCss 1s forwards;
+}
+
+@keyframes htmlCss {
+    100%{
+        width: 650px;
+    }
+}
+/* Animación js */
+.tech ul li:nth-child(2):before{
+    animation: js 1s forwards;
+}
+
+@keyframes js {
+    100%{
+        width: 550px;
+    }
+}
+
+/* Animación node */
+.tech ul li:nth-child(3):before{
+    animation: node 1s forwards;
+}
+
+@keyframes node {
+    100%{
+        width: 500px;
+    }
+}
+
+/* Animación ts */
+.tech ul li:nth-child(4):before{
+    animation: ts 1s forwards;
+}
+
+@keyframes ts {
+    100%{
+        width: 450px;
+    }
+}
+/* Animación angular */
+.tech ul li:nth-child(5):before{
+    animation: angular 1s forwards;
+}
+
+@keyframes angular {
+    100%{
+        width: 400px;
+    }
+}
+/* Animación sql */
+.tech ul li:nth-child(6):before{
+    animation: sql 1s forwards;
+}
+
+@keyframes sql {
+    100%{
+        width: 580px;
+    }
+}
+
+/* Animación mongo */
+.tech ul li:nth-child(7):before{
+    animation: mongo 1s forwards;
+}
+
+@keyframes mongo {
+    100%{
+        width: 400px;
+    }
+}
+
+/* Animación git */
+.tech ul li:nth-child(8):before{
+    animation: git 1s forwards;
+}
+
+@keyframes git {
+    100%{
+        width: 600px;
+    }
+}
+
+/*---------------TECH END---------------------------------------*/
+
+/*---------------PROJECTS---------------------------------------*/
+.projects{
+    width: 100%;
+    min-height: 150vh;
+    background: var(--featcher);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.projects h1{
+    width: 100%;
+    text-align: center;
+    color: var(--forest);
+    padding-bottom: 100px;
+}
+.projects .card-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+.projects .card-container .card{
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--marine);
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+
+.projects .card-container .card h3, .projects .card-container .card p{
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    padding: 10px;
+}
+.projects .card-container .card div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projects .card-container .card div img{
+    width: 300px;
+    height: 180px;
+    cursor: pointer;
+}
+/*---------------PROJECTS END ----------------------------------*/
+
+/*---------------CONTACT ---------------------------------------*/
+
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1{
+    color: var(--white);
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 100px;
+}
+
+.contact form{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input label{
+    width: 100%;
+    color: var(--white);
+}
+
+.input input[type="text"], .input input[type="email"]{
+    width: 60%;
+    height: 30px;
+    color: var(--forest);
+    background: var(--white);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.input2{
+    justify-content: end;
+}
+
+.text-area, .btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.text-area textarea{
+    resize: none;
+    min-height: 200px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.btn input[type="submit"]{
+    width: 100px;
+    margin-top: 50px;
+    border: solid var(--sleek-grey) 1px;
+    background: var(--forest);
+    color: #fff;
+    padding: 5px;
+    font-size:large ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 100px;
+}
+
+.btn input[type="submit"]:hover{
+    background: var(--featcher);
+    color: var(--forest);
+}
+
+/*---------------CONTACT END -----------------------------------*/
+
+/*---------------FOOTER ----------------------------------------*/
+
+footer{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--featcher);
+}
+
+footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+footer ul li{
+    font-size: xx-large;
+    list-style: none;
+    margin-top: 50px;
+}
+
+footer ul li a i{
+    color: var(--forest);
+    transition: 0.3s;
+}
+
+footer ul li a:hover i{
+    color: var(--white);
+}
+
+footer h3{
+    width: 100%;
+    color: var(--forest);
+    text-align: center;
+    margin-top: -150px;
+}
+
+
+
+/*---------------FOOTER END ------------------------------------*/
